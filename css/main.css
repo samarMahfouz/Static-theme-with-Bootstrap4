@@ -1,0 +1,463 @@
+/*********** Start main rules ***********/
+*{
+    -webkit-box-sizing:border-box;
+       -moz-box-sizing:border-box;
+         -o-box-sizing:border-box;
+            box-sizing:border-box
+}
+body{
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none
+}
+a{text-decoration: none}
+.article-content h2,
+.cats-links li a.mini-link,
+.tips h3,
+.about-me h3,
+.write-comment,
+.comments-area h3, 
+.comments-area .comment .name,
+.signup h1,
+.login h1,
+nav .upper-nav .links li a,
+nav .upper-nav .links li a:hover,
+.latest .latest-content .content a,
+footer .upper-footer h2{color:#ff0084}
+.about-me h1,
+.article-content h1,
+.signup button, 
+.login button,
+.signup .btn:hover,
+.login .btn:hover,
+.designs .seemore,
+.about-me span,
+.article-content .br,
+.trending span, .trending h2,
+.latest .latest-content h2{background-color:#ff0084}
+.designs .mini,
+.article-content .about,
+.article-content .similar-designs,
+.trending .trending-content{border:5px solid #ff0084}
+.cats-links li a.crafts-link{color:#60c0ba}
+.designs .craft{border:5px solid #60c0ba}
+.signup button, 
+.login button,
+.signup .btn:hover,
+.login .btn:hover{
+    border-color: #ff0084;
+}
+.about-me h1,
+.article-content h1,
+.trending h2{
+    color: #f7f7f7;
+    font-size: 30px;
+    max-width: 350px;
+    padding: 10px; 
+    margin-bottom: 0
+}
+.about-me span,
+.article-content .br{
+    height: 5px;
+    display: block;
+    margin-bottom: 30px
+}
+/*********** End main rules ***********/
+
+/********************** Start homepage **********************/
+/* Start navigation bar section */
+.navigation-bar .upper-nav{
+    background-color:#111;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+nav .upper-nav .social-media{ padding: 0 30px; color: #f7f7f7}
+nav .upper-nav .social-media i{
+   font-size: 16px;
+    margin-left: 15px;
+    margin-top: 8px;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 25px;
+    color: #3e3e5d;
+    text-align: center
+}
+nav .upper-nav .links{padding-top: 5px}
+nav .upper-nav .links li {
+    display: inline-block;
+    margin-left: 15px;
+    float: right
+}
+nav .upper-nav .links li a,
+nav .upper-nav .links li a:hover {  text-transform: uppercase;  text-decoration: none}
+nav .main-nav img{
+    margin: 50px auto;
+    display: block;
+    width: 60%
+}
+
+@media(max-width:767px){
+    
+    .navigation-bar .upper-nav{text-align: center}
+    nav .upper-nav .links li{float: none}
+    nav .upper-nav .social-media i {
+        font-size: 13px;
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px
+    }
+    nav .upper-nav .links li a{font-size: 13px}
+    
+}
+@media (max-width: 230px){
+    nav .upper-nav .links li a {   font-size: 9px }
+}
+/* End  navigation bar section */
+
+/* Start header section */
+header img{
+    display: block;
+    width: 90%;
+    margin: 20px auto
+}
+/* End header section */
+
+/* Start trending section */
+.trending{padding: 55px 0}
+.trending h2{ text-transform: uppercase; font-size: 25px}
+.trending .trending-content{  padding: 50px 20px}
+.trending .trending-content .content{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 20px 10px 0 10px;
+    border: 2px solid #ff0084
+}
+.trending .trending-content .image img{width: 100%}
+.trending .trending-content  h3{padding: 5px 0; font-size: 20px}
+@media(max-width:768px){
+    .trending h2 {
+        font-size: 22px;
+        text-align: center;
+        margin: 2px auto
+    }
+    .trending .trending-content {border: 0}
+}
+@media (max-width: 475px){
+    .trending h2 { font-size: 16px }
+    .trending .trending-content h3 { font-size: 15px}
+}
+/* End trending section */
+
+/* Start crafts and miniautres sections */
+.crafts,
+.miniature{padding: 55px 0; overflow: hidden}
+.crafts h2,
+.miniature h2{
+    font-size: 25px;
+    max-width: 350px;
+    background-color: #60c0ba;
+    margin-bottom: 0;
+    color: #f7f7f7;
+    padding: 10px 20px;
+    text-transform: uppercase
+}
+.crafts .crafts-content,
+.miniature .miniature-content{border: 2px solid #60c0ba}
+.crafts .crafts-content .content,
+.miniature .miniature-content .content{border: 2px solid #60c0ba}
+.crafts .crafts-content .content img,
+.miniature .miniature-content .content img{width: 100%}
+.crafts .row, 
+.miniature .row{margin-right: 0; margin-left: 0}
+.crafts .col-md-6,
+.crafts .col-sm-6,
+.crafts .col-xs-12,
+.miniature .col-md-6,
+.miniature .col-sm-6,
+.miniature .col-xs-12{padding-left: 0; padding-right: 0}
+@media(max-width:475px){
+    .crafts h2, .miniature h2{
+    font-size: 18px;
+    text-align: center;
+    margin: 2px auto 
+    }
+}
+/* End crafts section */
+
+/* Start latest articles section */
+.latest {padding: 55px 0} 
+.latest .latest-content{border: 5px solid #ff0084} 
+.latest .latest-content h2{
+    max-width: 350px;
+    color: #f7f7f7;
+    padding: 5px;
+    text-transform: capitalize;
+    font-size: 25px
+} 
+.latest .latest-content .content{margin: 25px} 
+.latest .latest-content .content h3{ padding: 5px 15px;  font-size: 19px} 
+.latest .latest-content .content p{
+    font-size: 16px;
+    max-width: 350px;
+    color:#938c8c
+} 
+.latest .latest-content .readmore{
+    display: block;
+    text-align: right;
+    margin: 25px;
+    font-size: 20px
+} 
+@media(max-width:775px){
+    .latest .latest-content .content p {font-size: 14px;  margin-top: 25px}
+    .latest .latest-content .content a{font-size: 14px}
+    .latest .latest-content .readmore{font-size: 16px}
+
+}
+@media(max-width:420px){
+    .trending,
+    .crafts,
+    .miniature{padding: 10px 0}
+    footer .last-footer{text-align: center}
+}
+/* End latest articles section */
+
+/* Start footer section */
+footer{background-color:#333}
+footer .upper-footer{padding: 55px 0}
+footer .upper-footer .footer-links li{margin-top: 55px}
+footer .upper-footer .footer-links li,
+footer .upper-footer .social-links li{
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-size: 18px
+}
+footer .upper-footer .footer-links{margin-top: 42px}
+footer .upper-footer .footer-links li a,
+footer .upper-footer .social-links li a{color: #f7f7f7}
+footer .last-footer{
+    color: #7a2551;
+    padding: 25px 0;
+    border-top: 5px solid #000
+}
+@media(max-width: 767px){
+    footer .upper-footer { padding: 20px 0 }
+    .upper-footer h2{font-size: 23px}
+    footer .upper-footer .footer-links li,
+    footer .upper-footer .social-links li{font-size: 12px}
+}
+@media(max-width: 420px){
+    footer .upper-footer{text-align: center}
+    footer .upper-footer .footer-links {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid #ff0084
+    }
+}
+/* End footer section */
+/********************** End homepage **********************/
+
+
+/********************** Start  about page **********************/
+.about-me img{
+    width:100%;
+    border:2px solid #ff73bc;
+    border-radius: 5px
+}
+.about-me h3{
+    border-left: 5px solid #ff0084;
+    font-size: 25px;
+    padding-left: 10px;
+    margin-bottom: 15px
+}
+.about-me p{
+    width: 300px;
+    color: #5e5d5d
+}
+@media(max-width:768px){
+    .about-me h1,
+.article-content h1 {
+        font-size: 22px;
+        max-width: 300px;
+        padding: 6px 10px;
+    }
+    .about-me .content{margin-top: 30px}
+}
+@media(max-width:350px){
+    .about-me span{margin-bottom: 10px}
+    .about-me .content { margin-top: 10px}
+    .about-me h3{font-size: 20px}
+    .about-me p {
+        width: auto;
+        font-size: 16px
+    }
+}
+/********************** End  about page **********************/
+
+
+/********************** Start categories page **********************/
+.designs .row{margin-left:0;  margin-right:0}
+.designs .add-margin{padding:5px}
+.cats-links li{display: inline-block}
+.cats-links li a{
+    font-size: 30px;
+    margin-right: 35px;
+    color:#333
+}
+.designs img{width: 100%; cursor: pointer}
+.designs .seemore{
+    display: inline-block;
+    color: #f7f7f7;
+    margin: 5px;
+    padding: 5px
+}
+@media(min-width:991px){
+    .designs .seemore{
+        font-size: 22px;
+        margin: 15px;
+        padding: 10px 15px;
+    }
+}
+@media(max-width: 420px){
+    .cats-links{padding-left: 0}
+    .cats-links li {display: inherit}
+    .cats-links li a{font-size: 25px; margin-right: 0}
+}
+/********************** End categories page **********************/
+
+/********************** Start article page design **********************/
+.article-content { padding: 55px 0; position: relative}
+.article-content a:not([href]):not([class]) {
+    position: absolute;
+    top: 59px;
+    right: 20px;
+    color:darkblue
+}
+.article-content .image {margin-bottom: 50px}
+.article-content .image img{ width: 100%}
+.article-content h2{ font-size: 25px; margin-bottom: 20px}
+.article-content p{ color: #665e5e; font-size: 16px}
+.tips{padding:25px 0}
+.tips ul li{color:#665e5e}
+.write-comment{
+    max-width: 400px;
+    padding: 25px 0
+}
+.comments-area h3{margin-bottom: 20px}
+.comments-area .comment{
+    background-color: #f7f7f7;
+    padding: 10px 0;
+    border: 2px solid #d0d0d0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    max-width: 500px;
+    margin-top: 10px
+}
+.comments-area .comment .content{color:#665e5e}
+.article-content .about{
+    padding: 10px 25px;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 50px
+}
+.article-content .about h2{font-size: 19px}
+.article-content .similar-designs{
+    padding:30px 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    color: #665e5e;
+    text-transform: capitalize
+}
+
+.article-content .similar-designs h3{font-size: 20px}
+.article-content .similar-designs .image{margin-bottom: 10px}
+.article-content .similar-designs .image img{width: 100%}
+.article-content  .buy-now{
+    border-radius: 10px;
+    background-color: #ff7e00;
+    max-width: 300px;
+    margin-top: 50px;
+    padding: 25px;
+    color: #f7f7f7
+}
+.article-content .similar-designs img,
+.article-content .buy-now img{margin: 10px auto; display: block}
+@media(min-width:730px){
+    .article-content a:not([href]):not([class]){right:130px}
+}
+@media(max-width:730px){
+    .article-content h2 {  font-size: 22px}
+    .article-content p {font-size: 13px }
+    .comments-area .comment {
+        padding: 5px 0;
+        font-size: 13px;
+        border: 0;
+        margin-bottom: 0;
+        margin-top: 0
+    }
+    .article-content .about {
+        padding: 0 20px;
+        max-width: 300px;
+        height: auto;
+        margin-top: 21px;
+        border: 0
+    }
+    .article-content .buy-now,
+    .article-content .about,
+    .article-content .similar-designs{margin-left: 20px}
+}
+
+@media(max-width:420px){
+    .article-content h1{font-size: 18px}
+    .article-content h2 {  font-size: 17px}
+    .tips h3{font-size: 22px}
+    .tips ul li { font-size: 13px}
+    .write-comment h3{font-size: 22px}
+    .comments-area h3 { margin-bottom: 10px;  font-size: 20px}
+    .article-content .similar-designs h3 {font-size: 17px}
+}
+/********************** End article page design **********************/
+
+
+/********************** Start signup and login pages **********************/
+.signup, .login{
+    max-width: 600px;
+    margin: 70px auto
+}
+.signup h1,
+.login h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 25px
+}
+.signup .form-group,
+.login .form-group{
+    margin-bottom: .5rem
+}
+.signup .form-control,
+.login .form-control{padding: 25px}
+.signup button, 
+.login button{
+    float: right
+}
+/* Media queries */
+@media(max-width: 500px){
+    .signup h1, .login h1 {
+        font-size: 20px;
+        margin-bottom: 20px
+    }
+    .signup .form-control, .login .form-control {
+        padding: 18px
+    } 
+    .btn {padding: .2rem .5rem}
+}
+/********************** End signup and login pages **********************/
