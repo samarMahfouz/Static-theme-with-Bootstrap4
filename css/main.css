@@ -56,11 +56,12 @@ footer .upper-footer h2{color:#ff0084}
 .article-content h1,
 .trending h2{
     color: #f7f7f7;
-    font-size: 30px;
+    font-size: 28px;
     max-width: 350px;
     padding: 10px; 
     margin-bottom: 0
 }
+article-content a{cursor:pointer}
 .about-me span,
 .article-content .br{
     height: 5px;
