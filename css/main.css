@@ -15,7 +15,6 @@ ul{
     margin: 0;
     list-style-type: none
 }
-.cats-links{margin-bottom:10px}
 a{text-decoration: none}
 .article-content h2,
 .cats-links li a.mini-link,
@@ -27,7 +26,7 @@ a{text-decoration: none}
 .signup h1,
 .login h1,
 nav .upper-nav .links li a,
-nav .upper-nav .links li a:hover,
+nav .upper-nav .links li a:hover{color:#ff54ad}
 .latest .latest-content .content a,
 footer .upper-footer h2{color:#ff0084}
 .about-me h1,
@@ -44,9 +43,9 @@ footer .upper-footer h2{color:#ff0084}
 .designs .mini,
 .article-content .about,
 .article-content .similar-designs,
-.trending .trending-content{border:2px solid #ff0084}
+.trending .trending-content{border:2px solid #ff00844d}
 .cats-links li a.crafts-link{color:#60c0ba}
-.designs .craft{border:2px solid #60c0ba}
+.designs .craft{border:3px solid #60c0ba6b}
 .signup button, 
 .login button,
 .signup .btn:hover,
@@ -57,12 +56,11 @@ footer .upper-footer h2{color:#ff0084}
 .article-content h1,
 .trending h2{
     color: #f7f7f7;
-    font-size: 28px;
+    font-size: 30px;
     max-width: 350px;
     padding: 10px; 
     margin-bottom: 0
 }
-article-content a{cursor:pointer}
 .about-me span,
 .article-content .br{
     height: 5px;
@@ -102,7 +100,7 @@ nav .upper-nav .links li a:hover {  text-transform: uppercase;  text-decoration:
 nav .main-nav img{
     margin: 50px auto;
     display: block;
-    width: 25%
+    width: 40%
 }
 
 @media(max-width:767px){
@@ -134,7 +132,11 @@ header img{
 
 /* Start trending section */
 .trending{padding: 55px 0}
-.trending h2{ text-transform: uppercase; font-size: 25px}
+.trending h2{ 
+    text-transform: uppercase;
+    padding-left: 34px;
+    font-size: 21px
+}
 .trending .trending-content{  padding: 50px 20px}
 .trending .trending-content .content{
     margin-left: 10px;
@@ -143,17 +145,18 @@ header img{
     border: 2px solid #ff0084
 }
 .trending .trending-content .image img{width: 100%}
-.trending .trending-content  h3{padding: 5px 0; font-size: 20px}
+.trending .trending-content  h3{padding: 5px 0; font-size: 19px}
 @media(max-width:768px){
     .trending h2 {
         font-size: 22px;
         text-align: center;
+        padding-left: 5px;
         margin: 2px auto
     }
     .trending .trending-content {border: 0}
 }
 @media (max-width: 475px){
-    .trending h2 { font-size: 16px }
+    .trending h2 { font-size: 16px ; padding-left: 5px}
     .trending .trending-content h3 { font-size: 15px}
 }
 /* End trending section */
@@ -176,7 +179,7 @@ header img{
 .crafts .crafts-content .content,
 .miniature .miniature-content .content{border: 2px solid #60c0ba}
 .crafts .crafts-content .content img,
-.miniature .miniature-content .content img{width: 100%; height:329px}
+.miniature .miniature-content .content img{width: 100%; height: 297px}
 .crafts .row, 
 .miniature .row{margin-right: 0; margin-left: 0}
 .crafts .col-md-6,
@@ -200,14 +203,14 @@ header img{
 .latest .latest-content h2{
     max-width: 350px;
     color: #f7f7f7;
-    padding: 5px;
+    padding: 10px 22px;
     text-transform: capitalize;
-    font-size: 25px
+    font-size: 26px
 } 
 .latest .latest-content .content{margin: 25px} 
-.latest .latest-content .content h3{ padding: 5px 15px;  font-size: 19px} 
+.latest .latest-content .content h3{ padding: 5px 0 15px;  font-size: 20px} 
 .latest .latest-content .content p{
-    font-size: 16px;
+    font-size: 15px;
     max-width: 350px;
     color:#938c8c
 } 
@@ -222,6 +225,13 @@ header img{
     .latest .latest-content .content a{font-size: 14px}
     .latest .latest-content .readmore{font-size: 16px}
 
+}
+@media(max-width:450px){
+    .latest .latest-content h2 {
+        padding: 5px 15px;
+        font-size: 21px;
+    }
+    .latest .latest-content .content h3{font-size: 16px}
 }
 @media(max-width:420px){
     .trending,
@@ -458,7 +468,8 @@ footer .last-footer{
         margin-bottom: 20px
     }
     .signup .form-control, .login .form-control {
-        padding: 18px
+        padding: 18px;
+        font-size: 22px
     } 
     .btn {padding: .2rem .5rem}
 }
